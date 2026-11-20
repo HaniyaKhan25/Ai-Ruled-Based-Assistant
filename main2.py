@@ -33,3 +33,17 @@ responses = {
      "what is ai": "ai stands for artificial intelligence",
      "thank you": "You are most welcome!"
     }
+
+# Method of function get to responses:
+
+def getOfResponses(userQuestion):
+    userQuestion = userQuestion.lower()
+    for eachkey in responses:
+        if eachkey in userQuestion:
+               return responses[eachkey]
+        elif "i am sad" in userQuestion:
+             return "Dont worry! everything will be fine"
+        elif "i am happy" in userQuestion:
+             return"thats ! Great Wounderful"
+
+    return "i am not able to that yet i am still in learning mode"
