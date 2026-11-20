@@ -55,3 +55,5 @@ while True:
           print("\n Good by! Have a nice day")
           break
      reply = getOfResponses(userInput)
+     time.sleep(1)
+     print("Bot Response", reply)
