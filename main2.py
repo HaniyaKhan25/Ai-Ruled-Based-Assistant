@@ -47,3 +47,11 @@ def getOfResponses(userQuestion):
              return"thats ! Great Wounderful"
 
     return "i am not able to that yet i am still in learning mode"
+
+while True:
+     userInput = input("\n PlEASE! ask your question : ")
+
+     if "bye" in userInput.lower():
+          print("\n Good by! Have a nice day")
+          break
+     reply = getOfResponses(userInput)
